@@ -35,7 +35,7 @@ nav .logo_section>button{
 }
 
 
-nav .menu_navbar{
+nav .menu_navbar {
     display: flex;
     align-items: center;
     list-style: none;

@@ -1,4 +1,4 @@
-import React , {useEffect , useState} from 'react'
+import React , {useState} from 'react'
 import "./Navbar.css"
 
 const Navbar = () =>{
@@ -21,7 +21,7 @@ const Navbar = () =>{
                             <i className="fas fa-bars"></i>             
                         </button>
                     </div>
-                    <ul className={isOpen ? "menu_navbar" : "none"}>
+                    <ul className={ isOpen ? "menu_navbar" : "menu_navbar none"}>
                         <li>Home</li>
                         <li>About</li>
                         <li>Contact</li>

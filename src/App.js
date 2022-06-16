@@ -1,10 +1,12 @@
 import "./App.css"
+import Intro from "./components/Intro/Intro";
 import Navbar from "./components/Navbar/Navbar";
 
 const App = () => {
   return (
-    <div style={{height : `200vh`}}>
+    <div style={{position:"relative", overflow:"hidden"}}>
       <Navbar></Navbar>
+      <Intro></Intro>
     </div>
   );
 };
