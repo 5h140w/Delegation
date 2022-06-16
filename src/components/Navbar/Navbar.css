@@ -1,0 +1,14 @@
+nav.navbar{
+    position: fixed;
+    width:100%;
+    transition: 1s all;
+}
+
+
+nav .navbar_container{
+    position: relative;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
