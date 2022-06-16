@@ -80,4 +80,7 @@ nav .menu_navbar>li{
         padding:20px;
         cursor: pointer;
     }
+    .navbar_container .none{
+        display: none;
+    }
 }
