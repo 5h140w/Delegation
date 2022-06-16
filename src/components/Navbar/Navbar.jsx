@@ -1,10 +1,16 @@
-import React from 'react'
+import React , {useEffect , useState} from 'react'
 import "./Navbar.css"
 
 const Navbar = () =>{
+
+    const [isScrolled, setIsScrolled] = useState(false)
+
+    window.onscroll = () =>{
+        setIsScrolled(window.pageYOffset !== 0)
+    }
     return (
         <>
-            <nav className="navbar">
+            <nav className={isScrolled ? "navbar scrolled" : "navbar"}>
                 <section className="navbar_container">
                     <div className="logo_section">
                         <h1>Lena Instruments</h1>
@@ -12,7 +18,7 @@ const Navbar = () =>{
                             <i className="fas fa-bars"></i>             
                         </button>
                     </div>
-                    <ul>
+                    <ul className="menu_navbar">
                         <li>Home</li>
                         <li>About</li>
                         <li>Contact</li>
