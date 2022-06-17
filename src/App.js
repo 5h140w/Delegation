@@ -1,4 +1,5 @@
 import "./App.css"
+import Contact from "./components/Contact/Contact";
 import Feature from "./components/Feature/Feature";
 import Intro from "./components/Intro/Intro";
 import Navbar from "./components/Navbar/Navbar";
@@ -9,6 +10,7 @@ const App = () => {
       <Navbar></Navbar>
       <Intro></Intro>
       <Feature></Feature>
+      <Contact></Contact>
     </div>
   );
 };
