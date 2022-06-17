@@ -82,7 +82,7 @@ div.intro_container{
     justify-content: center;
     align-items: center;
 }
-span.subtitle{
+.right_section .wrapper .content span.subtitle{
     color:#827162;
     font-size:25px;
     font-weight: bold;
