@@ -1,0 +1,150 @@
+.contact_container{
+    height: 90%;
+    background: url("https://www.toptal.com/designers/subtlepatterns/uploads/double-bubble-outline.png");
+    padding : 40px 0px;
+}
+
+.contact_container .contact_title{
+    margin: 20px 50px;
+    margin-top: 0;
+}
+
+.contact_container .wrapper{
+    height: 100%;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper .form_container{
+    width: 50%;
+}
+
+.wrapper .form_container>form{
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form>.left_form{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 20px;
+}
+
+form>.right_form{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+form input{
+    width: 200px;
+    padding: 20px;
+}
+
+.right_form>textarea{
+    width: 200px;
+    height: 60%;
+    padding: 20px;
+}
+.right_form> .btn{
+    border: none;
+    padding: 15px;
+    background-color: darkblue;
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.right_form p.message{
+    width: 200px;
+    height: 60%;
+    padding: 20px;
+}
+
+.wrapper .address_container{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.address_container .address_item{
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.address_container .address_item>img{
+    width: 20px;
+    margin-right: 20px;
+}
+
+.address_container .address_item>span{
+    font-size: 20px;
+    margin-right: 15px;
+}
+
+@media only screen and (max-width : 992px){
+    .contact_container .contact_title{
+        margin: 20px;
+        text-align: center;
+    }
+    .contact_container .wrapper{
+        flex-direction: column;
+    }
+    .wrapper .form_container{
+        width: 100%;
+    }
+    .wrapper .form_container>form{
+        margin-bottom: 20px;
+    }
+    .wrapper .address_container{
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (max-width:480px){
+    .wrapper .form_container>form{
+        flex-direction: column;
+    }
+    form>.left_form{
+        height: 50%;
+        margin-right: 0;
+    }
+    form>.right_form{
+        height: 50%;
+    }
+    form input{
+        padding: 5px;
+    }
+    .right_form p.message{
+        padding: 5px;
+        margin-top: 20px;
+    }
+    
+    .right_form>textarea{
+        padding: 5px;
+        margin-top: 20px;
+    }
+    .right_form> .btn{
+        padding: 5px;
+        font-size: 14px;
+    }
+    .address_container .address_item{
+        margin-bottom: 20px;
+    }
+    .address_container .address_item>img{
+        width: 15px;
+    }
+    .address_container .address_item>span{
+        font-size: 14px;
+    }
+}

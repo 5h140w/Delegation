@@ -27,7 +27,7 @@ const Contact = () =>{
     }
     return(
         <div className='contact_container'>
-            <h1>Questions? <br/> Let's Get In Touch</h1>
+            <h1 className='contact_title'>Questions? <br/> Let's Get In Touch</h1>
             <section className='wrapper'>
                 <div className='form_container'>
                     <form className='form' ref={formRef} onSubmit={sentNotification}>
@@ -38,7 +38,7 @@ const Contact = () =>{
                         </div>
                         <div className='right_form'>
                             <textarea placeholder='Your message' name="message" required={true} minLength={15}/>
-                            {isSent ? <span>Thank You!</span> : <button className='btn'>Send</button>}
+                            {isSent ? <p className='message'>Thank You!</p> : <button className='btn'>Send</button>}
                         </div>
                     </form>
                 </div>
