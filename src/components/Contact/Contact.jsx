@@ -5,16 +5,20 @@ import Map from "../../img/map.png"
 import Phone from "../../img/phone.png"
 import Send from "../../img/send.png"
 
+const service = process.env.REACT_APP_SERVICE
+const template = process.env.REACT_APP_TEMPLATE
+const publicKey = process.env.REACT_APP_PUBLIC_KEY
+
 const Contact = () =>{
     const formRef = useRef()
     const [isSent , setisSent] = useState(false)
     const sentNotification = (e) =>{
         e.preventDefault();
         emailjs.sendForm(
-            "service_sdd0mvy",
-            "template_ge6tvxv",
+            service,
+            template,
             formRef.current,
-            "x40Id5lk2dRgM0Qsf"
+            publicKey
         ).then(
             (res)=>{
                 console.log("Done" + res.text)
