@@ -5,6 +5,7 @@ import Footer from "./components/Footer/Footer";
 import Intro from "./components/Intro/Intro";
 import Navbar from "./components/Navbar/Navbar";
 
+
 const App = () => {
   return (
     <div style={{position:"relative", overflow:"hidden"}}>
