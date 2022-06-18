@@ -7,6 +7,7 @@ import Navbar from "./components/Navbar/Navbar";
 
 
 const App = () => {
+  console.log(process.env.REACT_APP_SERVICE)
   return (
     <div style={{position:"relative", overflow:"hidden"}}>
       <Navbar></Navbar>

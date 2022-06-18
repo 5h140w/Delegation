@@ -12,6 +12,7 @@ const publicKey = process.env.REACT_APP_PUBLIC_KEY
 const Contact = () =>{
     const formRef = useRef()
     const [isSent , setisSent] = useState(false)
+    console.log(service, template,publicKey)
     const sentNotification = (e) =>{
         e.preventDefault();
         emailjs.sendForm(
